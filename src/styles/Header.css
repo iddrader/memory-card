@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2em;
+    width: 50%;
+    margin: auto;
+
+}
+
+.score {
+    background-color: #575757;
+    width: 6em;
+    padding: 1em;
+    border-radius: 20px;
+    font-weight: 600;
+}
