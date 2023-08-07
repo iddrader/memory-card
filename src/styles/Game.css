@@ -1,26 +1,25 @@
 .game {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 12em 12em 12em;
-    grid-template-rows: 12em 12em;
-    gap: 2em;
-    margin-top: 4em;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 12em 12em 12em;
+  grid-template-rows: 12em 12em;
+  gap: 2em;
+  margin-top: 4em;
 }
 
 .card {
-    background-color: #575757;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  background-color: #575757;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .symbol {
-    font-size: 64px;
+  font-size: 64px;
 }
 
 .element {
-    font-size: 1.2em;
-    color: lightgray;
+  font-size: 1.2em;
+  color: lightgray;
 }
