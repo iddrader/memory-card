@@ -21,12 +21,9 @@ export default function Game(props) {
 
   return (
     <div className="game">
-        <Card element={elementsToShow[0]} onClick={handleClick}/>
-        <Card element={elementsToShow[1]} onClick={handleClick}/>
-        <Card element={elementsToShow[2]} onClick={handleClick}/>
-        <Card element={elementsToShow[3]} onClick={handleClick}/>
-        <Card element={elementsToShow[4]} onClick={handleClick}/>
-        <Card element={elementsToShow[5]} onClick={handleClick}/>
+        {elementsToShow.map((element) => (
+            <Card key={element} element={element} onClick={handleClick}/>
+        ))}
     </div>
   );
 }
