@@ -1,5 +1,6 @@
 import elements from "../assets/PeriodicTableJSON.json";
 import "../styles/Game.css";
+import Card from './Card.jsx';
 
 export default function Game(props) {
   const handleClick = props.handleAddUsedElement;
@@ -20,78 +21,12 @@ export default function Game(props) {
 
   return (
     <div className="game">
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[0].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[0].symbol}>
-          {elementsToShow[0].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[0].symbol}>
-          {elementsToShow[0].name}
-        </div>
-      </div>
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[1].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[1].symbol}>
-          {elementsToShow[1].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[1].symbol}>
-          {elementsToShow[1].name}
-        </div>
-      </div>
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[2].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[2].symbol}>
-          {elementsToShow[2].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[2].symbol}>
-          {elementsToShow[2].name}
-        </div>
-      </div>
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[3].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[3].symbol}>
-          {elementsToShow[3].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[3].symbol}>
-          {elementsToShow[3].name}
-        </div>
-      </div>
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[4].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[4].symbol}>
-          {elementsToShow[4].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[4].symbol}>
-          {elementsToShow[4].name}
-        </div>
-      </div>
-      <div
-        className="card"
-        onClick={handleClick}
-        data-symbol={elementsToShow[5].symbol}
-      >
-        <div className="symbol" data-symbol={elementsToShow[5].symbol}>
-          {elementsToShow[5].symbol}
-        </div>
-        <div className="element" data-symbol={elementsToShow[5].symbol}>
-          {elementsToShow[5].name}
-        </div>
-      </div>
+        <Card element={elementsToShow[0]} onClick={handleClick}/>
+        <Card element={elementsToShow[1]} onClick={handleClick}/>
+        <Card element={elementsToShow[2]} onClick={handleClick}/>
+        <Card element={elementsToShow[3]} onClick={handleClick}/>
+        <Card element={elementsToShow[4]} onClick={handleClick}/>
+        <Card element={elementsToShow[5]} onClick={handleClick}/>
     </div>
   );
 }
