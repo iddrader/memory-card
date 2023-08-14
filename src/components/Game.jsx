@@ -1,6 +1,7 @@
 import elements from "../assets/PeriodicTableJSON.json";
 import "../styles/Game.css";
 import Card from './Card.jsx';
+import {v1} from 'uuid';
 
 export default function Game(props) {
   const handleClick = props.handleAddUsedElement;
@@ -22,7 +23,7 @@ export default function Game(props) {
   return (
     <div className="game">
         {elementsToShow.map((element) => (
-            <Card key={element} element={element} onClick={handleClick}/>
+            <Card key={v1()} element={element} onClick={handleClick}/>
         ))}
     </div>
   );
